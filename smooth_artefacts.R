@@ -1,3 +1,4 @@
+data=read.table('data.txt',header=T)
 library(shiny)
 ui <- basicPage(
   selectInput("select", "Select column to plot and manipulate", choices=names(data)),
