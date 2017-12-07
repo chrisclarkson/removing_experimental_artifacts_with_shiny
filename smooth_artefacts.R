@@ -3,7 +3,7 @@ library(shiny)
 ui <- basicPage(
   selectInput("select", "Select column to plot and manipulate", choices=names(data)),
   plotOutput("plot1", click = "plot_click", brush = "plot_brush"),
-  actionButton('button', 'button')
+  actionButton('write corrected data frame to file', 'button')
 )
 
 server <- function(input, output) {
